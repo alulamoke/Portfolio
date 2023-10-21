@@ -16,8 +16,7 @@ import ProfileIMG from "@/assets/profile.jpg";
 export const Home = () => (
   <Element
     name="Home"
-    className="grid place-content-center bg-inherit p-4"
-    style={{ height: "calc(100vh - 7vh)" }}
+    className="grid h-full place-content-center bg-inherit p-4"
   >
     <div className="mx-auto max-w-screen-lg">
       <section className="grid grid-cols-3 gap-8">

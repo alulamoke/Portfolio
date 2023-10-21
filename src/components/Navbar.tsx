@@ -17,7 +17,7 @@ export const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background p-4 shadow-sm">
+    <header className="fixed top-0 z-50 w-full border-b bg-background p-4 shadow-sm">
       <nav className="mx-auto flex max-w-screen-xl items-center justify-between gap-4">
         <p className="cursor-pointer text-lg font-semibold">CodeWithA.</p>
         <div className="hidden items-center gap-6 md:flex">
@@ -27,6 +27,7 @@ export const Navbar = () => {
               to={link}
               spy={true}
               smooth={true}
+              offset={-50}
               duration={1000}
               onClick={() => setActiveLink(link)}
               className={cn(
@@ -65,6 +66,7 @@ const MenuNavbar = () => {
               to={link}
               spy={true}
               smooth={true}
+              offset={-50}
               duration={1000}
               onClick={() => setActiveLink(link)}
               className={cn(

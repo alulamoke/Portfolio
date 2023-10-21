@@ -10,7 +10,7 @@ import {
 import socialLinks from "@/constants/socialLinks";
 
 export const Footer = () => (
-  <main className="bg-secondary p-4">
+  <main className="bg-inherit p-4">
     <footer className="mx-auto flex max-w-screen-lg flex-wrap items-center justify-between gap-4">
       <div className="flex items-center gap-4">
         {socialLinks.map((socialLink, i) => (
